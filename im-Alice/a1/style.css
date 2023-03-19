@@ -1,0 +1,71 @@
+/*Custom fonts*/
+@font-face {
+    font-family: afterglow;
+    src: url("/fonts/afterglow_2/Afterglow-Regular.ttf")
+}
+@font-face {
+    font-family: glitten;
+    src: url("/fonts/glitten/Glitten-Regular.otf")
+}
+@font-face {
+    font-family: louisgeogrecafe;
+    src: url("/fonts/louis_george_caf/Louis\ George\ Cafe\ Light.ttf");
+}
+
+
+body {
+    background-image: url("/images/AdobeStock_293172041.jpeg");
+    text-align: center;
+}
+
+pre {
+    font-family: afterglow;
+    font-size: 80px;
+}
+
+h2 {
+    color:rgb(12, 75, 19);
+}
+
+div {
+    display: block;
+    margin: auto;
+}
+
+.questions {
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: glitten;
+    border-color: transparent;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .answers {
+    display: none;
+    position: relative;
+    background-color: #a1d7aaca;
+    z-index: 1;
+    margin: 20px;
+    width:50rem;
+    font-size: 18px;
+    font-family: louisgeogrecafe;
+    padding: 20px;
+    /*Make dropdown list slide down if possible*/
+    /*transition: all 0.25s ease-in; (didn't work)*/
+  }
+
+  .dropdown:hover .answers {
+    display: block;
+}
+  
+  .dropdown:hover .questions {
+    background-color: #1ed624bb;
+}
+  
